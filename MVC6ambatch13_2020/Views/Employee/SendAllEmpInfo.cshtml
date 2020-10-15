@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "SendAllEmpInfo";
+}
+
+<h2>Multiple Employee Information</h2>
+
+
+@foreach(var item in ViewBag.empinfo)
+{
+    @item.EmpId<br />
+    @item.EmpName<br />
+    @item.EmpSalary<br />
+
+}
+

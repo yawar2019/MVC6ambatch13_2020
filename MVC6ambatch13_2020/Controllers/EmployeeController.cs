@@ -98,8 +98,29 @@ namespace MVC6ambatch13_2020.Controllers
             obj.EmpName = "Harika";
             obj.EmpSalary = 89000;
 
-            //object model=obj; conneted code
-            return View(obj);
+            EmployeeModel obj1 = new EmployeeModel();
+            obj1.EmpId = 1212;
+            obj1.EmpName = "Divya";
+            obj1.EmpSalary = 99000;
+
+            List<EmployeeModel> listobj = new List<EmployeeModel>();
+            listobj.Add(obj);
+            listobj.Add(obj1);
+
+
+
+
+            DepartmentModel deptobj = new DepartmentModel();
+            deptobj.DeptId = 1;
+            deptobj.DeptName = "Network";
+
+            EmpDept emdeptobj = new EmpDept();
+            emdeptobj.Emp = listobj;
+            emdeptobj.Dept = deptobj;
+
+
+
+            return View(emdeptobj);
 
         }
     }

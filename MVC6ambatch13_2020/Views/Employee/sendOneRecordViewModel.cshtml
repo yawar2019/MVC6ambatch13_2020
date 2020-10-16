@@ -1,10 +1,23 @@
-﻿@model  MVC6ambatch13_2020.Models.EmployeeModel
-@{
-    ViewBag.Title = "sendOneRecordViewModel";
-}
+﻿@model  MVC6ambatch13_2020.Models.EmpDept
 
-<h2>sendOneRecordViewModel</h2>
 
-@Model.EmpId<br />
-@Model.EmpName<br />
-@Model.EmpSalary<br />
+<table>
+    <tr>
+        <th>EmpId</th>
+        <th>EmpName</th>
+        <th>EmpSalary</th>
+    </tr>
+    @foreach (var item in Model.Emp)
+    {
+        <tr>
+            <td>@item.EmpId</td>
+            <td>@item.EmpName</td>
+            <td>@item.EmpSalary</td>
+        </tr>
+    }
+</table>
+
+
+
+@Model.Dept.DeptId<br />
+@Model.Dept.DeptName<br />

@@ -1,7 +1,10 @@
-﻿
+﻿@model MVC6ambatch13_2020.Models.EmployeeModel
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>New Controller Index Page</h2>
 
+@Html.Partial("_MyPartialView",Model)
+
+@{Html.RenderPartial("_MyPartialView", Model);}

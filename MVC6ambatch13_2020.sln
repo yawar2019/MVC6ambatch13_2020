@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC6ambatch13_2020", "MVC6ambatch13_2020\MVC6ambatch13_2020.csproj", "{953E5572-26A4-49A5-B61E-89879FC2B274}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{44171586-ABE3-447D-8D08-E26D66D81CA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoDotNEtExample", "AdoDotNEtExample\AdoDotNEtExample.csproj", "{E98C1C13-BCCA-49E5-A375-06F7BF60DC4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{953E5572-26A4-49A5-B61E-89879FC2B274}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{953E5572-26A4-49A5-B61E-89879FC2B274}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{953E5572-26A4-49A5-B61E-89879FC2B274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44171586-ABE3-447D-8D08-E26D66D81CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44171586-ABE3-447D-8D08-E26D66D81CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44171586-ABE3-447D-8D08-E26D66D81CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44171586-ABE3-447D-8D08-E26D66D81CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E98C1C13-BCCA-49E5-A375-06F7BF60DC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E98C1C13-BCCA-49E5-A375-06F7BF60DC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E98C1C13-BCCA-49E5-A375-06F7BF60DC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E98C1C13-BCCA-49E5-A375-06F7BF60DC4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

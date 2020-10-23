@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{953E5572-26A4-49A5-B61E-89879FC2B274}</ProjectGuid>
+    <ProjectGuid>{E98C1C13-BCCA-49E5-A375-06F7BF60DC4D}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MVC6ambatch13_2020</RootNamespace>
-    <AssemblyName>MVC6ambatch13_2020</AssemblyName>
+    <RootNamespace>AdoDotNEtExample</RootNamespace>
+    <AssemblyName>AdoDotNEtExample</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -135,10 +135,10 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
-    <Compile Include="Controllers\NewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\EmployeeContext.cs" />
     <Compile Include="Models\EmployeeModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -150,21 +150,11 @@
     </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Employee\GetView.cshtml" />
+    <Content Include="Views\Employee\Create.cshtml" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Employee\GetMyWishView.cshtml" />
-    <Content Include="Views\New\Index.cshtml" />
-    <Content Include="Views\Employee\SendData.cshtml" />
-    <Content Include="Views\Employee\SendEmpInfo.cshtml" />
-    <Content Include="Views\Employee\SendAllEmpInfo.cshtml" />
-    <Content Include="Views\Employee\sendOneRecordViewModel.cshtml" />
-    <Content Include="Views\Employee\getmeFile.cshtml" />
-    <Content Include="Views\Employee\GetRedirectToPrimary.cshtml" />
-    <Content Include="Views\Shared\_MyPartialView.cshtml" />
-    <Content Include="Views\Employee\getMyPartialView.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -188,9 +178,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58225</DevelopmentServerPort>
+          <DevelopmentServerPort>51787</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58225/</IISUrl>
+          <IISUrl>http://localhost:51787/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

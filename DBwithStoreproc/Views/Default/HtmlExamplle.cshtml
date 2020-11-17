@@ -1,0 +1,44 @@
+﻿@using DBwithStoreproc.CustomFolder
+@model DBwithStoreproc.Models.Sp_GetEmployee_Result
+
+@{
+    ViewBag.Title = "HtmlExamplle";
+}
+
+<h2>HtmlExamplle</h2>
+
+@Html.TextBox("EmpName1",null,new {@class="form-control",@style="background-color:green"})
+@Html.TextBoxFor(x=>x.EmpName, new { @class = "form-control", @style = "background-color:green" })
+
+@Html.DropDownList("Country",new List<SelectListItem>()
+{
+    new SelectListItem {Text="India",Value="India" ,Selected=true},
+     new SelectListItem {Text="China",Value="China" },
+},"Select Country") 
+
+@*@Html.DropDownList("Employees")*@
+
+@Html.DropDownList("Employees1232", (IEnumerable<SelectListItem>)ViewBag.Employees12)<br />
+
+<span>java</span> @Html.CheckBox("java",true)<br />
+@Html.RadioButton("Gender","Male",false)
+@Html.RadioButton("Gender", "FeMale", true)
+<br />
+@Html.Password("pwd","abcd")<br />
+
+
+@myhtmlhelper.MyLabel("checkbox")
+ 
+
+@Html.createUrControl("text")<br />
+@Html.createUrControl("file")<br />
+@Html.createUrControl("checkbox")<br />
+
+
+
+
+@helper labelbyrazzorcode(string content)
+{
+    <label>@content</label>
+}
+@labelbyrazzorcode("hi this is ali")

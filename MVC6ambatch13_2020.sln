@@ -17,6 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBasedApproach", "Model
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBwithStoreproc", "DBwithStoreproc\DBwithStoreproc.csproj", "{57BBED83-80A3-4A25-BE21-A93421A0B4F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumingWebSerice", "ConsumingWebSerice\ConsumingWebSerice.csproj", "{47144B91-C847-4071-86FB-2814D894830E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{57BBED83-80A3-4A25-BE21-A93421A0B4F9} = {57BBED83-80A3-4A25-BE21-A93421A0B4F9}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +56,10 @@ Global
 		{57BBED83-80A3-4A25-BE21-A93421A0B4F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57BBED83-80A3-4A25-BE21-A93421A0B4F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57BBED83-80A3-4A25-BE21-A93421A0B4F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47144B91-C847-4071-86FB-2814D894830E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47144B91-C847-4071-86FB-2814D894830E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47144B91-C847-4071-86FB-2814D894830E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47144B91-C847-4071-86FB-2814D894830E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
